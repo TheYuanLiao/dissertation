@@ -47,7 +47,6 @@ knitr::opts_chunk$set(echo = FALSE)
 The geographic displacement of human beings in space and time, seen as **individuals** or **groups**.
 <footnote> Barbosa et al., 2018</footnote>
 
-
 ## How is human mobility supported by transport systems?
 
 Through a variety of transport modes, e.g.,
