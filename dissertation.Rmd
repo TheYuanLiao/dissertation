@@ -8,7 +8,7 @@ output:
     widescreen: true
     transition: faster
     css: litera.css
-    logo: logo.png
+    logo: figs/logo.png
 ---
 <style>
 div.footnotes {
