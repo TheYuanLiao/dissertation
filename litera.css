@@ -35,6 +35,14 @@ slides > slide:not(.nobackground):before {
   height: 0px;
   background-size: 0px 0px;
 }
+#images {
+    display: flex;
+    justify-content: center;
+}
+
+figure {
+    text-align: center;
+}
 :root {
   --blue: #4582ec;
   --indigo: #6610f2;

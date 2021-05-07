@@ -47,15 +47,24 @@ knitr::opts_chunk$set(echo = FALSE)
 The geographic displacement of human beings in space and time, seen as **individuals** or **groups**.
 <footnote> Barbosa et al., 2018</footnote>
 
+<div id="images">
+  <figure>
+      <img src='figs/moveVis.gif' alt='missing' height="350"/>
+      <figcaption><p><small>Individual movements.</small></p></figcaption>
+  </figure>
+  <figure>
+      <img src='figs/tw_odm_komm.png' alt='missing' height="350"/>
+      <figcaption><p><small>Population trips.</small></p></figcaption>
+  </figure>
+</div>
+
 ## How is human mobility supported by transport systems?
 
 Through a variety of transport modes, e.g.,
 
 <br><br>
 <center>
-```{r modes, echo = FALSE}
-knitr::include_graphics("figs/modes.png")
-```
+![](figs/modes.png){width=40%}
 <br>
 <span class="badge badge-pill badge-info">ride-sourcing</span> <span class="badge badge-pill badge-info">public transit</span> <span class="badge badge-pill badge-info">private car</span>
 </center>
@@ -72,7 +81,7 @@ Different modes present distinct characteristics such as travel time and spatiot
 
 > - <p>Emerging data sources enable deep and new insights from large-scale collection of **human movement** and **transport systems**.</p>
 
-<center>![](figs/emerging_sources.png){width=100%}<p class="text-info">Tweets and road networks (car + public transit) in Stockholm region</p></center>
+<center>![](figs/emerging_sources.png){width=100%}<p><small>Tweets and road networks (car + public transit) in Stockholm region</small></p></center>
 
 
 ## Research questions and present work
