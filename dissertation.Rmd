@@ -40,6 +40,7 @@ $(document).ready(function() {
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = FALSE)
+library(emojifont)
 ```
 
 ## What is human mobility?
@@ -58,8 +59,8 @@ The geographic displacement of human beings in space and time, seen as **individ
   </figure>
 </div>
 
-## How is human mobility supported by transport systems?
-
+## How is human mobility supported by transport systems? {.build}
+<div>
 Through a variety of transport modes, e.g.,
 
 <br>
@@ -68,10 +69,13 @@ Through a variety of transport modes, e.g.,
 <br>
 <span class="badge badge-pill badge-info">ride-sourcing</span> <span class="badge badge-pill badge-info">public transit</span> <span class="badge badge-pill badge-info">private car</span>
 </center>
-<br>
+</div>
+
+<div>
 <p>**Transport modal disparities**</p>
 - <p>Carbon intensity</p>
 - <p>Spatiotemporal distributions of travel time and trips</p>
+</div>
 
 ## Background {.build}
 
@@ -85,12 +89,15 @@ Through a variety of transport modes, e.g.,
 <center>![](figs/emerging_sources.png){width=100%}<p><small>Fig. 3 Tweets and road networks (car + public transit) in Stockholm region</small></p></center>
 </div>
 
-## Research questions and present work
+## Research questions and present work {.build}
 
+<div>
 1. What are the potentials and limitations of using emerging data sources for modelling mobility?
 
 2. How can new data sources be properly modelled for characterising transport modal disparities?
+</div>
 
+<div>
 <table class="table table-hover">
   <thead>
     <tr>
@@ -132,6 +139,7 @@ Through a variety of transport modes, e.g.,
     </tr>
   </tbody>
 </table>
+</div>
 
 ## Methodology {.columns-2}
 <center>![](figs/methodology.png){width=90%}<p><small>Fig. 4 Methodology</small></p></center>
@@ -155,27 +163,27 @@ Through a variety of transport modes, e.g.,
   <tbody>
     <tr class="table-light">
       <th scope="row">Data mining</th>
-      <th scope="col">🗸</th>
+      <th scope="col">`r emoji('heavy_check_mark')`</th>
       <th scope="col"></th>
       <th scope="col"></th>
       <th scope="col"></th>
-      <th scope="col">🗸</th>
+      <th scope="col">`r emoji('heavy_check_mark')`</th>
     </tr>
     <tr class="table-light">
       <th scope="row">Mobility metrics and models</th>
-      <th scope="col">🗸</th>
-      <th scope="col">🗸</th>
-      <th scope="col">🗸</th>
-      <th scope="col">🗸</th>
-      <th scope="col">🗸</th>
+      <th scope="col">`r emoji('heavy_check_mark')`</th>
+      <th scope="col">`r emoji('heavy_check_mark')`</th>
+      <th scope="col">`r emoji('heavy_check_mark')`</th>
+      <th scope="col">`r emoji('heavy_check_mark')`</th>
+      <th scope="col">`r emoji('heavy_check_mark')`</th>
     </tr>
     <tr class="table-light">
       <th scope="row">Methods in transport geography</th>
       <th scope="col"></th>
       <th scope="col"></th>
       <th scope="col"></th>
-      <th scope="col">🗸</th>
-      <th scope="col">🗸</th>
+      <th scope="col">`r emoji('heavy_check_mark')`</th>
+      <th scope="col">`r emoji('heavy_check_mark')`</th>
     </tr>
   </tbody>
 </table>
@@ -209,17 +217,29 @@ Through a variety of transport modes, e.g.,
 
 <center>![](figs/dis_pres_sparsity.png){width=80%}<p><small>Fig. 5 Sparsity issue.<footnote>Data used in Paper III</footnote></small></p></center>
 
-## Limitations: behaviour bias of overly reporting leisure/night activities
+## Limitations: behaviour bias of overly reporting leisure/night activities {.build}
 
+<div> 
 Uncommon places and leisure activities >> regularly visited places, e.g., home and workplace.
+</div>
 
+<div> 
 <center>![](figs/dis_pres_behaviour_bias.png){width=80%}<p><small>Fig. 6 Behaviour bias.<footnote>Data used in Paper I</footnote></small></p></center>
+</div>
 
-## Limitations: not for commuting travel demand estimation
+## Limitations: not for commuting travel demand estimation {.build}
 
-The reliability of estimated commuting trips using geotagged tweets is low.
+<div> 
+The reliability of estimated commuting trips using geotagged tweets is low.<footnote>Paper II</footnote>
+</div>
 
-<center>![](figs/present_work_paperII_r1_commuting.png){width=100%}<p><small>Fig. 7 Commuting trips. (A) Survey and user-based collected geolocations (Twitter LD). (B) Commuting trip distance distribution produced by Twitter in comparison with Survey.<footnote>Paper II</footnote></small></p></center>
+<div style="float: left; width: 65%;">
+<center>![](figs/commuting_matrices.png){width=100%}<p><small>Fig. 7A Commuting matrices.</small></p></center>
+</div>
+
+<div style="float: right; width: 34%;">
+<center>![](figs/commuting_distances.png){width=100%}<p><small>Fig. 7B Commuting trip distance distributions.</small></p></center>
+</div>
 
 ## Potentials at individual level: population heterogeneity on mobility {.build}
 
@@ -413,8 +433,89 @@ Spatiotemporal dynamics of travel time ratio (R)<footnote>Paper IV</footnote>:
 - <p>Incentivise the ride-sourcing trips that fill the gaps in the PT services that take a long time or require lengthy walking and transfers connecting to suburban areas.</p>
 ...
 
-## A summary of answers
+## A summary of answers {.build}
+### RQ1 Potentials and limitations for modelling mobility
 
-1. What are the potentials and limitations of using emerging data sources for modelling mobility?
+<div>
+- <p>Easy access, low cost, but with biased population, behaviour bias, and sparsity issue.</p>
+</div>
 
-2. How can new data sources be properly modelled for characterising transport modal disparities?
+<div>
+- <p>At the individual level, fundamental patterns are preserved.</p>
+</div>
+
+<div>
+- <p>At the population level: </p> 
+  - <p>a reasonably good source for the overall travel demand estimation but not commuting demand.</p>
+
+  - <p>careful consideration on spatial scale, sampling method, and sample size.</p>
+</div>
+
+<div>
+- <p>Innovative approaches for correcting the biases and increasing the available data.</p>
+</div>
+
+## A summary of answers {.build}
+### RQ2 Characterising transport modal disparities
+
+<div>
+- <p>Importance of data fusion approaches, especially given more and more open but incomplete data.</p>
+</div>
+
+<div>
+- <p>Geotagged tweets is a good source for time-varying attractiveness of urban locations.</p>
+</div>
+
+<div>
+- <p>Public transit is virtually always slower than car and ride-sourcing.</p>
+</div>
+
+<div>
+- <p>For making public transit more competitive, spatiotemporal details add nuanced insights to identify gaps and opportunities.</p>
+</div>
+
+## Outlook {.build}
+<div>
+- <p>Extending the use of social media data for mobility modelling.</p>
+  - <p>De-biasing the data source.</p>
+  - <p>Long-distance travels.</p>
+  - <p>Combining the textual information with the location part.</p>
+</div>
+
+<div>
+- <p>Generating global synthetic mobility data for improving travel demand projections.</p>
+  - <p>Bigger picture: energy systems' modelling for the transport sector.</p>
+</div>
+
+## Outlook {.build}
+<div>
+- <p>Combining multi-modal trip data for reducing transport carbon emissions.</p>
+  - <p>Occupancy, shareability, and electrification of new mobility services provided by transportation network companies (TNC).</p>
+</div>
+
+<div>
+- <p>Introducing the perspective of networks into urban mobility research.</p>
+  - <p>The relationship between user/traveller friendship networks (abstract) and their mobility networks (spatial).</p>
+  - <p>How social segregation and spatial interactions shape each other?</p>
+</div>
+
+## Thanks for listening! {data-background="figs/end_background.png"}
+Yuan Liao
+
+`r emoji('e-mail')`  yuan.liao@chalmers.se
+
+![](figs/tw_blue.png){width=3%} @TheYuanLiao
+
+`r emoji('globe_with_meridians')` https://yuanliao.netlify.app/
+
+<br>
+
+<div style="float: left; width: 70%;">
+`r emoji('green_book')`Thesis available online
+
+https://research.chalmers.se/en/publication/523982
+</div>
+
+<div style="float: right; width: 30%;">
+![](figs/qrcode_thesis.png){width=50%}
+</div>
