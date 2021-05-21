@@ -15,6 +15,10 @@
     background-image: url('figs/title_background.png');
     background-size: 100% 100%;
 }
+slides > slide {
+  background: linear-gradient(#ffffff, #ffffff 85%, #ffffff);
+  background: white;
+}
 slides>slide.title-slide hgroup h1 {
   font-size: 42px;
   letter-spacing: 0;

@@ -50,12 +50,12 @@ The geographic displacement of human beings in space and time, seen as **individ
 
 <div id="images">
   <figure>
-      <img src='figs/moveVis.gif' alt='missing' height="350"/>
       <figcaption><p><small>Fig. 1 Individual movements.</small></p></figcaption>
+      <img src='figs/moveVis.gif' alt='missing' height="350"/>
   </figure>
   <figure>
+      <figcaption><p><small>Fig. 2 Trips from groups of people.</small></p></figcaption>
       <img src='figs/tw_odm_komm.png' alt='missing' height="350"/>
-      <figcaption><p><small>Fig. 2 Population trips.</small></p></figcaption>
   </figure>
 </div>
 
@@ -71,6 +71,7 @@ Through a variety of transport modes, e.g.,
 </center>
 </div>
 
+<br>
 <div>
 <p>**Transport modal disparities**</p>
 - <p>Carbon intensity</p>
@@ -86,7 +87,8 @@ Through a variety of transport modes, e.g.,
 </div>
 
 <div style="float: right; width: 50%;">
-<center>![](figs/emerging_sources.png){width=100%}<p><small>Fig. 3 Tweets and road networks (car + public transit) in Stockholm region</small></p></center>
+<p><small>Fig. 3 Tweets and road networks (car + public transit) in Stockholm region</small></p>
+<center>![](figs/emerging_sources.png){width=100%}</center>
 </div>
 
 ## Research questions and present work {.build}
@@ -234,17 +236,23 @@ The reliability of estimated commuting trips using geotagged tweets is low.<foot
 </div>
 
 <div style="float: left; width: 65%;">
-<center>![](figs/commuting_matrices.png){width=100%}<p><small>Fig. 7A Commuting matrices.</small></p></center>
+<p><small>Fig. 7A Commuting matrices.</small></p>
+
+<center>![](figs/commuting_matrices.png){width=100%}</center>
 </div>
 
 <div style="float: right; width: 34%;">
-<center>![](figs/commuting_distances.png){width=100%}<p><small>Fig. 7B Commuting trip distance distributions.</small></p></center>
+<p><small>Fig. 7B Commuting trip distance distributions.</small></p>
+
+<center>![](figs/commuting_distances.png){width=100%}</center>
 </div>
 
 ## Potentials at individual level: population heterogeneity on mobility {.build}
 
-<div style="float: left; width: 50%;">  
-<center>![](figs/four_travellers.png){width=100%}<p><small>Fig. 8 Four types of travellers.<footnote>Paper I</footnote></small></p></center>
+<div style="float: left; width: 50%;">
+<p><small>Fig. 8 Four types of travellers.<footnote>Paper I</footnote></small></p>
+
+<center>![](figs/four_travellers.png){width=100%}</center>
 </div>
 
 <div style="float: right; width: 50%;">
@@ -293,7 +301,8 @@ The reliability of estimated commuting trips using geotagged tweets is low.<foot
 </div>
 
 <div style="float: right; width: 66%;">
-<center>![](figs/density_approach.png){width=95%}<p><small>Fig. 10 Trip-based approach (left)<footnote>Lee et al., 2019</footnote> vs. density-based approach (right).<footnote>Paper II</footnote></small></p></center>
+<p><small>Fig. 10 Trip-based approach (left)<footnote>Lee et al., 2019</footnote> vs. density-based approach (right).<footnote>Paper II</footnote></small></p>
+<center>![](figs/density_approach.png){width=95%}</center>
 </div>
 
 ## Extending the use by innovative approaches {.build}
@@ -308,11 +317,11 @@ The reliability of estimated commuting trips using geotagged tweets is low.<foot
 <div>
 <table style="white-space:nowrap;width:100%;">
   <tr>
-    <td><p style="font-size:24px">Input: sparse mobility traces <br>that can not be directly converted to trips.</p></td>
+    <td><p style="font-size:24px">**Input**- sparse mobility traces <br>that can not be directly converted to trips.</p></td>
     <td rowspan="2"><center>![](figs/input_output.png){width=65%}</center></td>
   </tr>
   <tr>
-    <td><p style="font-size:24px">Output: synthesised mobility <br>converted to daily trips.</p></td>
+    <td><p style="font-size:24px">**Output**- synthesised mobility <br>converted to daily trips.</p></td>
   </tr>
 </table>
 </div>
@@ -326,7 +335,7 @@ The reliability of estimated commuting trips using geotagged tweets is low.<foot
 </div>
 
 <div>
-- <p>Characterising trip distance distributions (domestic) of global regions:</p>
+- <p>An application: characterising trip distance distributions (domestic) of global regions:</p>
 
 <center>![](figs/model_distributions.png){width=100%}<p><small>Fig. 11 Distributions of synthesised domestic trips.<footnote>Paper III</footnote></small></p></center>
 </div>
@@ -414,7 +423,9 @@ Spatiotemporal dynamics of travel time ratio (R)<footnote>Paper IV</footnote>.
 </div>
 
 <div>
-<center>![](figs/modal_competition_framework.png){width=95%}<p><small>Fig. 16 Data enrichment for ride-sourcing trip data.<footnote>Paper V</footnote></p></small></center>
+<center><p><small>Fig. 16 Data enrichment for ride-sourcing trip data.<footnote>Paper V</footnote></p></small></center>
+
+<center>![](figs/modal_competition_framework.png){width=95%}</center>
 </div>
 
 ## Modal competition: ride-sourcing vs. public transit {.build}
@@ -423,11 +434,11 @@ Spatiotemporal dynamics of travel time ratio (R)<footnote>Paper IV</footnote>.
 <p>A glass-box model enhanced by machine learning techniques: **additive** impact of **factors** and factor **interactions**.</p>
 </div>
 
-<div style="float: left; width: 50%;">
+<div style="float: left; width: 55%;">
 <p><small>Fig. 17 Impact of travel time by ride-sourcing (left) and transfer (right).<footnote>Paper V</footnote></p></small><center>![](figs/modal_competition_tt_transfers.png){width=100%}</center>
 </div>
 
-<div style="float: right; width: 50%;">
+<div style="float: right; width: 44%;">
 - <p>Competition is more likely to happen when the **travel time** by ride-sourcing < 15 min.</p>
 - <p>Requiring multiple **transfers** is associated with the competition between.</p>
 </div>
