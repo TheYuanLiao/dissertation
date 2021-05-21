@@ -488,42 +488,42 @@ Spatiotemporal dynamics of travel time ratio (R)<footnote>Paper IV</footnote>.
 ### RQ2 Characterising transport modal disparities
 
 <div>
-- <p>Importance of data fusion approaches, especially given more and more open but incomplete data.</p>
+- <p>`r emoji('package')` Importance of data fusion approaches, especially given more and more open but incomplete data.</p>
 </div>
 
 <div>
-- <p>Geotagged tweets is a good source for time-varying attractiveness of urban locations.</p>
+- <p>![](figs/tw_blue.png){width=3%} Geotagged tweets is a good source for time-varying attractiveness of urban locations.</p>
 </div>
 
 <div>
-- <p>Public transit is virtually always slower than car and ride-sourcing.</p>
+- <p>`r emoji('bus')` `r emoji('car')` Public transit is virtually always slower than car and ride-sourcing.</p>
 </div>
 
 <div>
-- <p>For making public transit more competitive, spatiotemporal details add nuanced insights to identify gaps and opportunities.</p>
+- <p>`r emoji('round_pushpin')` For making public transit more competitive, spatiotemporal details add nuanced insights to identify gaps and opportunities.</p>
 </div>
 
 ## Outlook {.build}
 <div>
-- <p>Extending the use of social media data for mobility modelling.</p>
+- <p>![](figs/tw_blue.png){width=3%} Extending the use of social media data for mobility modelling.</p>
   - <p>De-biasing the data source.</p>
   - <p>Long-distance travels.</p>
   - <p>Combining the textual information with the location part.</p>
 </div>
 
 <div>
-- <p>Generating global synthetic mobility data for improving travel demand projections.</p>
+- <p>`r emoji('globe_with_meridians')` Generating global synthetic mobility data for improving travel demand projections.</p>
   - <p>Bigger picture: energy systems' modelling for the transport sector.</p>
 </div>
 
 ## Outlook {.build}
 <div>
-- <p>Combining multi-modal trip data for reducing transport carbon emissions.</p>
-  - <p>Occupancy, shareability, and electrification of new mobility services provided by transportation network companies (TNC).</p>
+- <p>`r emoji('blue_car')` & `r emoji('tram')` `r emoji('bike')` `r emoji('taxi')` `r emoji('bus')` `r emoji('train')` Combining multi-modal trip data for reducing transport carbon emissions.</p>
+  - <p>Occupancy, shareability, and electrification of new mobility services provided by transportation network companies (TNCs).</p>
 </div>
 
 <div>
-- <p>Introducing the perspective of networks into urban mobility research.</p>
+- <p>`r emoji('spider_web')` Introducing the perspective of networks.</p>
   - <p>The relationship between user/traveller friendship networks (abstract) and their mobility networks (spatial).</p>
   - <p>How social segregation and spatial interactions shape each other?</p>
 </div>

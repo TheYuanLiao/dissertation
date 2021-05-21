@@ -238,7 +238,7 @@ After the data enrichment, the ride-sourcing trips are ready for the analysis. N
 ### RQ1 Potentials and limitations for modelling mobility
 (00:53, 22:38)
 
-**[Click]** **[Click]** Let's summarise the answers to research question one.
+**[Click]** **[Click]** After selectively showing you some results from the five studies, let's summarise the answers to research question one.
 
 **[Click]** Regarding the use of social media data, we need to balance the trade-offs between easy access, low cost, and biased population, behaviour bias, and sparsity issue.
 
@@ -267,18 +267,21 @@ After the data enrichment, the ride-sourcing trips are ready for the analysis. N
 
 Paper I to V use emerging data sources in mobility and transport from the exploratory stage to the application side. After four-year research, compared with much more knowledge still needed, this doctoral research is just a start. I believe the future work should ask relevant questions with powerful and innovative tools without constraining the research into specific data sources. There are four directions I'd like to pursue in the future.
 
-**[Click]** The first direction is to extend the use of social media data for mobility modelling. Besides the continuous effort of debiasing this data source, long-distance travels could be a reasonable research object using this data source, given we can get many leisure activities and international travels from it.
+**[Click]** The first direction is to extend the use of social media data for mobility modelling. Besides the continuous effort of debiasing this data source, long-distance travels could be a reasonable research object using this data source. Becayse we can get many leisure activities and international travels from it.
 
 This thesis focuses on the geolocations of Twitter data, while the text part is rich in information and can provide better context together with the geolocation part.
 
-**[Click]** Towards the end of this doctoral research, the studies have become more cross-disciplinary and practical. What we just started is to integrate the mobility studies using emerging data sources into the energy systems' modelling for the transport sector.
+**[Click]** Towards the end of this doctoral research, the studies have become more cross-disciplinary and practical. What we just started is to generate global synthetic mobility data for improving travel demand projections. This is to be integrated into the energy systems' modelling for the transport sector.
 
 ## Outlook - 2
 (01:18, 26:12)
 
-**[Click]** The transport sector accounts for a big share of carbon emissions. It is valuable to seek concrete policy implications of minimising the carbon footprint from the transport sector in cities. One way of doing this is to combine multi-modal trip data for occupancy, shareability, and electrification of new mobility services provided by TNCs. 
+The transport sector accounts for a big share of carbon emissions. It is valuable to seek concrete policy implications of minimising the carbon footprint from the transport sector in cities.
 
-**[Click]** This thesis has used a series of metrics and models from network science. However, the perspective of networks has only been implicit, and the use of network science tools has been superficial and practical. I found the perspective of networks interesting and powerful to reveal the patterns of urban mobility that no other tools are capable of. One direction that I haven't had time to pursue is to study the relationship between user/traveller friendship networks (abstract) and their mobility networks (spatial). This tells us about social segregation and how such segregation and spatial interactions shape each other. Along this direction, advanced techniques from graph learning and complex systems will contribute to urban mobility research together with the increasingly available data.
+**[Click]** One way of doing this is to combine multi-modal trip data for occupancy, shareability, and electrification of new mobility services provided by TNCs. 
+**[Click]** This thesis has used a series of metrics and models from network science. However, the perspective of networks has only been implicit, and the use of network science tools has been superficial and practical. I found the perspective of networks interesting and powerful to reveal the patterns of urban mobility that no other tools are capable of. 
+
+One direction that I haven't had time to pursue is to study the relationship between user/traveller friendship networks (abstract) and their mobility networks (spatial). This tells us about social segregation and how such segregation and spatial interactions shape each other. Along this direction, advanced techniques from graph learning and complex systems will contribute to urban mobility research together with the increasingly available data.
 
 ## Thanks for listening!
 (00:20, 26:32)
