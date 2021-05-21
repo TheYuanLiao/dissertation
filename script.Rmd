@@ -7,7 +7,7 @@ output:
 ---
 
 ```{r setup, include=FALSE}
-knitr::opublic transts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ## Title page
@@ -102,18 +102,24 @@ Given the behaviour bias of reporting uncommon places more than regularly visite
 ## Potentials at individual level: Population heterogeneity on mobility
 (00:55, 09:15)
 
-Despite those limitations we have discussed so far, population heterogeneity on mobility is reflected in geotagged tweets.
+Despite those limitations we have discussed so far, population heterogeneity on basic mobility patterns is reflected in geotagged tweets.
 
-In Paper I, mobility is described with geographical characteristics and network properties. Geographical characteristics reveal how far one travels and network properties tell us how frequently one explores new locations.
+**[Click]** We describe mobility with geographical characteristics and network properties. Geographical characteristics reveal how far one travels and network properties tell us how frequently one explores new locations.
 
-Using clustering analysis on these two dimensions, we found four types of travellers: local returner, local explorer, global returner, and global explorer. Local travellers visit locations that are nearby, while global travellers visit far locations. Returners tend to visit around one frequently visited centre while explorers travel around decentralised locations.
+Using clustering analysis on these two dimensions, we found four types of travellers: local returner, local explorer, global returner, and global explorer. 
+
+**[Click]** Local travellers visit locations that are nearby, while global travellers visit far locations. 
+
+**[Click]** Returners tend to visit around one frequently visited centre while explorers travel around decentralised locations.
+
+Now we know geotagged tweets can be used to reveal the individual differences on their travel patterns.
 
 ## Potentials at population level: travel demand modelling - 1
 (00:35, 09:50)
 
-Now we know geotagged tweets can be used to reveal the individual differences on their travel patterns. Let's switch to the population level, the feasibility of using geotagged tweets for travel demand modelling. 
+Let's switch to the population level to look at the feasibility of using geotagged tweets for travel demand modelling. 
 
-**[Click]** Paper II explores the impact of spatial scale, sampling method, and sample size among others.
+**[Click]** How good Twitter data are for travel demand modelling depends on spatial scale, sampling method, and sample size among others.
 
 **[Click]** Regarding spatial scale, we found Twitter data are more suitable for **city level** than national level. And the main obstacle of using Twitter data at a large spatial scale is the **sparsity**.
 
@@ -122,12 +128,14 @@ Now we know geotagged tweets can be used to reveal the individual differences on
 
 **[Click]** Regarding sampling method, we found **user-based** data collection works better than area-based data collection, because it gives a much larger number of geotagged tweets and therefore, a more complete picture of travel demand.
 
-**[Click]** To make more data usable, we propose a density-based approach. In the literature, two consecutive geotagged tweets by one person make a trip However, we already know that Twitter users do not geotweet everyday or every location. So, this trip-based way needs to filter out a lot of trips that have unreasonably long time interval. This makes the sparse Twitter data even more sparse. In this density-based approach, we use population and the count of geotagged tweets to decide the trips between traffic zones. It increases sample size a lot and results in a more robust and accurate estimation of the overall travel demand.
+**[Click]** To make more data usable, we propose a density-based approach. 
+
+**[Click]** In the literature, two consecutive geotagged tweets by one person make a trip as shown in the left side. However, we already know that Twitter users do not geotweet everyday or every location. So, this trip-based way needs to filter out a lot of trips that have unreasonably long time interval. This makes the sparse Twitter data even more sparse. In this density-based approach on the right side, we use population and the count of geotagged tweets to decide the trips between traffic zones. It increases sample size a lot and results in a more robust and accurate estimation of the overall travel demand.
 
 ## Extending the use by innovative approaches - 1
 (01:08, 12:00)
 
-The more complete the data, the better picture of human mobility they provide. Given the sparsity of geotagged tweets, the feasibility of using them is limited. However, we can extend the use of this inexpensive and easy-to-access data source by innovative approaches.
+The more complete the data, the better picture of human mobility they provide. Given the sparsity of geotagged tweets, the feasibility of using them is limited. However, we can extend the use by innovative approaches.
 
 **[Click]** We have talked about the density-based approach for travel demand estimation which gives better results by using more data. In paper III, we further develope an individual-based mobility model that fills the gaps in geotagged tweets. The model is designed to correct behaviour bias and sparsity issue we have discussed.
 
@@ -138,7 +146,7 @@ The more complete the data, the better picture of human mobility they provide. G
 
 **[Click]** The model-synthesised results have good agreements with the other data sources such as travel survey.
 
-**[Click]** We demonstrate an application here. The model can be used to characterise trip distance distributions of global regions' residents. Here we show the model-synthesised results in Figure 11. Y axis is probability density and X axis is trip distance. We see some regional differences but they mostly follow a lognormal distribution. We can use these synthesised data for travel demand estimation which can scale up due to the easy access of social media data.
+**[Click]** We demonstrate an application here. We can use the model to characterise trip distance distributions of global regions' residents. Here we see the model-synthesised results in Figure 11. X axis is trip distance and Y axis is probability density. From left to right, we have Sweden, Nairobi, and all the regions. We see some regional differences but they mostly follow a lognormal distribution. We can use these synthesised data for travel demand estimation which can scale up due to the easy access of social media data.
 
 ## RQ2 Transport modal disparities
 (01:09, 13:49)
@@ -147,7 +155,7 @@ After showing you some results in answering research question 1, let's put human
 
 As shown in this diagram, Paper IV is about spatial temporal disparities of travel time between car and public transit. Paper V is about how the built environment and trip attributes affect the competition between ride-sourcing and public transit.
 
-Regarding the involved data sources, Paper IV uses more than geolocations of Twitter; road traffic, networks, and public transit schedules from transport systems are combined. Paper V further extends the data use by combining ride-sourcing trip data, points of interest, and weather records.
+Regarding the involved data sources, Paper IV uses more than geolocations of Twitter; we also integrated road traffic, networks, and public transit schedules from transport systems. Paper V further extends the data use by combining ride-sourcing trip data, points of interest, and weather records.
 
 In the upcoming slides, I will present some results in quantifying transport modal disparities between car and public transit as well as ride-sourcing and public transit.
 
@@ -161,41 +169,48 @@ In the upcoming slides, I will present some results in quantifying transport mod
 ## Spatiotemporal patterns of travel time - 2
 (00:51, 15:17)
 
-**[Click]** We define the travel disparity R as the travel time by public transit divided by the travel time by car. A high modal disparity means taking public transport is much more time-consuming than driving a car. Here come the 24-hour dynamics of the travel time disparity. The results talk about when and where to improve public transt service for a car-to-transit modal shift.
+**[Click]** We define the travel time ratio as the travel time by public transit divided by the travel time by car. A high modal disparity means taking public transport is much more time-consuming than driving a car. Here we see the 24-hour dynamics of the travel time disparity. The results talk about when and where to improve public transt service in terms of both access and travel time.
 
-**[Click]** We further summarise the travel time disparity across cities. We find that at the city level, travel time by public transt is around twice as high as by car. This travel time disparity also varies over 24 hours. It turns out that public transt can compete with car use during peak rush hours in Stockholm and Amsterdam.
+**[Click]** We further summarise the travel time disparity across cities which varies over 24 hours, and find that travel time by public transt is around twice as high as by car. It turns out that public transt can compete with car use during peak rush hours in Stockholm and Amsterdam.
 
-## Modal competition: ride-sourcing vs. public transit
+## Modal competition: ride-sourcing vs. public transit - 1
 (01:24, 16:41)
 
-We can choose driving our own car or taking public transit. Besides public transit, ride-sourcing like Uber has become a popular alternative to driving too. 
+People can choose driving their own car or taking public transit. Nowadays, ride-sourcing like Uber has become a popular alternative to driving. 
 
 **[Click]** One of the key questions remains unanswered: Does ride-sourcing complement, or compete with, public transit? Public transit has lower green house gas intensity than ride-sourcing. Therefore, if ride-sourcing mostly competes with public transt, it may increase the overall emissions from transport systems.
 
 **[Click]** Let's ask ourselves this question: How large is the share of ride-sourcing trips that can be substituted by taking public transit? If you are willing to walk up to 800 m to access and leave the transit station during daytime?
 
-**[Click]** By this definition, we call the ride-sourcing trips that can be substituted by public transit transit-competing, while the ones that can not be substituted as non-transit-competing. How do these two categories of ride-sourcing trips look like? What trip attributes and built environment are linked to the competition? What are the implications for policymaking? Before we approach these questions, let's look at the data at our hands.
+**[Click]** By this definition, we call the ride-sourcing trips that can be substituted by public transit transit-competing, while the ones that can not be substituted as non-transit-competing. What trip attributes and built environment are linked to the competition? What are the implications for policymaking? Before we approach these questions, let's look at the data at our hands.
+
+## Modal competition: ride-sourcing vs. public transit - 2
+
+**[Click]** It turns out that the transit-competing trips account for 48.2% of the total trip records. It means that a considerable share of ride-sourcing trips can be potentially substituted by public transit.
+
+**[Click]** Looking at their hot spots of pick-up and drop-off locations, the non-transit-competing trips tend to have a more spread-out distribution of pick-up and drop-off hot spots, including the international airport.
+
 
 ## Data fusion approaches
 (02:12, 18:53)
 
-We have demonstrated characterizing spatiotemporal patterns of travel time disparities using various data sources. 
+**[Click]** We have demonstrated a data fusion framework for travel time calculation. For a better understanding of transport modal disparities, we need innovative ways of utilising different data sources, especially increasing the amount of incomplete but big datasets that are made publicly available. These data can cover trips from ride-sourcing, ride-sharing, taxi, and e-scooters.
 
-**[Click]** For a better understanding of transport modal disparities, we need innovative ways of utilising different data sources, especially increasing the amount of incomplete but big datasets that are made publicly available. These data can cover trips from ride-sourcing, ride-sharing, taxi, and e-scooters. They are oftentimes collected from a large area and population but at a cost of rich detail. A common set of variables in these big trip data include trip ID, pick-up and drop-off locations, pick-up and drop-off times, and cost. To gain insights from using these data, we need a data fusion framework to enrich the original dataset.
+**[Click]** They are oftentimes collected from a large area and population but at a cost of rich detail. A common set of variables in these big trip data include trip ID, pick-up and drop-off locations, pick-up and drop-off times, and cost. To gain insights from using these data, we need a data fusion framework to enrich the original dataset.
 
-**[Click]** We enrich each record with the travel information for its public transt alternative assuming the same departure time, origin, and destination as well as with the weather information for the departure time. Moreover, we detect the community structure of the ride-sourcing origin-destination matrix. By doing so, we divide the study area into sub-regions based on the ride-sourcing travel demand. These demand-based sub-regions help us better identify the trend for the competition between them.
+**[Click]** In Paper V, we enrich each record with the travel information for its public transt alternative assuming the same departure time, origin, and destination. We also get the weather information for the departure time. Moreover, we detect the community structure of the ride-sourcing origin-destination matrix. By doing so, we divide the study area into sub-regions based on the ride-sourcing travel demand. These demand-based sub-regions help us better identify where the competition between them.
 
 The original dataset does not tell us any environmental context. In order to know more about the built environment of the pick-up and drop-off spots, we identify the functional clusters using points of interest (POIs) of the zones in the study area, such as restaurant and hotel, and quantify the transit-stop density in the zones.
 
-After the data enrichment, the ride-sourcing trips are ready for the analysis of the competition which is affected by their attributes and built environment.
+After the data enrichment, the ride-sourcing trips are ready for the analysis. Now we can answer how the competition is affected by the trip attributes and built environment.
 
 ## Modal competition: ride-sourcing vs. public transit
 ### Model and impact of travel time and public-transit transfer
 (01:15, 20:08)
 
-**[Click]** **[Click]** Besides the data fusion framework, we also use a glass-box model enhanced by machine learning techniques with the enriched ride-sourcing trips to discuss the relationship between the two modes. We quantify how the many factors of trip attributes and built environment and the interactions between them affect the competition between them in an additive way. It turns out that the transit-competing trips account for 48.2% of the total trip records. It means that a considerable share of ride-sourcing trips can be potentially substituted by public transit.
+**[Click]** **[Click]** Besides the data fusion framework, we also use a glass-box model enhanced by machine learning techniques with the enriched ride-sourcing trips to discuss the relationship between the two modes. We quantify how the many factors of trip attributes and built environment and the interactions between them affect the competition between them in an additive way.
 
-**[Click]** This figure shows the impact of travel time by ride-sourcing and transfer of taking public transit. The y axis shows their score; a score above zero increases the tendency of a trip being transit-competing.
+**[Click]** This figure shows the impact of travel time by ride-sourcing and transfer of taking public transit. The y axis shows their scores; a score above zero increases the tendency of a trip being transit-competing.
 
 **[Click]** We found that Competition is more likely to happen when the **travel time** by ride-sourcing < 15 min. Requiring multiple **transfers** is associated with the competition between.
 
@@ -203,7 +218,7 @@ After the data enrichment, the ride-sourcing trips are ready for the analysis of
 ### Impact of land-use patterns
 (00:54, 21:02)
 
-**[Click]** **[Click]** Using POI data, we cluster the study area into seven clusters. They are named by their land-use intensity and diversity.
+**[Click]** **[Click]** Using points of interest such as hotel and restaurant, we group the study area into seven clusters. They are named by their land-use intensity and diversity. From rural to centre, the land-use diversity and intensity increase.
 
 **[Click]** This figure shows the impact of the land-use cluster on the left and its interaction with public transit transfer on the right. It turns out that low density/diversity of land use lowers the probability of competition between the two modes. And interestingly, multiple transfers required by the trips in the area of middle density/diversity land use intensify the competition.
 
@@ -211,7 +226,13 @@ After the data enrichment, the ride-sourcing trips are ready for the analysis of
 ### Selective recommendations
 (00:43, 21:45)
 
-Based on the main findings, I present some recommendations here. We could improve public transt services that provide access to the international airport (informed by ride-sourcing hot spots). Expand public transt networks guided by the transit-competing ride-sourcing trips featuring short travel time but a big gap between the two modes. We could also incentivise the ride-sourcing trips that fill the gaps in the public transt services that take a long time or require lengthy walking and transfers connecting to suburban areas.
+**[Click]** Based on the main findings, I present some recommendations here. 
+
+**[Click]** We could improve public transt services that provide access to the international airport. 
+
+**[Click]** Expand public transt networks guided by the transit-competing ride-sourcing trips featuring short travel time but a big gap between the two modes. 
+
+**[Click]** We could also incentivise the ride-sourcing trips that fill the gaps in the public transt services that take a long time or require lengthy walking and transfers connecting to suburban areas.
 
 ## A summary of answers
 ### RQ1 Potentials and limitations for modelling mobility
