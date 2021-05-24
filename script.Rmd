@@ -3,8 +3,13 @@ title: "Script"
 author: "Yuan Liao"
 date: "5/11/2021"
 output:
+<<<<<<< HEAD
   html_document: default
   pdf_document: default
+=======
+  pdf_document: default
+  html_document: default
+>>>>>>> 8a67ca4794b203fac21b02cd95bb4653cc906a0f
 ---
 
 ```{r setup, include=FALSE}
