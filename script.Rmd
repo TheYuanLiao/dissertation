@@ -1,9 +1,10 @@
 ---
-title: "Scripublic transt"
+title: "Script"
 author: "Yuan Liao"
 date: "5/11/2021"
-output: 
-  html_document
+output:
+  html_document: default
+  pdf_document: default
 ---
 
 ```{r setup, include=FALSE}
