@@ -3,15 +3,9 @@ title: "Script"
 author: "Yuan Liao"
 date: "5/11/2021"
 output:
-<<<<<<< HEAD
   html_document: default
   pdf_document: default
-=======
-  pdf_document: default
-  html_document: default
->>>>>>> 8a67ca4794b203fac21b02cd95bb4653cc906a0f
 ---
-
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
@@ -33,25 +27,25 @@ Understanding human mobility tells us how fast pandemics spread globally, how po
 ## How is human mobility supported by transport systems?
 (00:32, 01:40)
 
-**Click** Mobility happens because people have access to a variety of transport modes, such as ride-sourcing like Uber using our smart phones, public transit, and private car.
+**[Click]** Mobility happens because people have access to a variety of transport modes, such as ride-sourcing like Uber using our smart phones, public transit, and private car.
 
-**Click** Different modes have different levels of carbon intensity. They also present distinct characteristics such as travel time and how the trips distribute in space and time. We call these transport modal disparities.
+**[Click]** Different modes have different levels of carbon intensity. They also present distinct characteristics such as travel time and how the trips distribute in space and time. We call these transport modal disparities.
 
 ## Background
 (00:46, 02:26)
 
-**Click** Transportation presents a major challenge to curbing climate change. Better-informed policymaking requires up-to-date empirical data with good quality, low cost, and easy access. Along with the prevalence of digital technologies, emerging data sources provide us large amount data of human movements and transport systems. How can we use them to gain new insights? This thesis is a practice to answer this question.
+**[Click]** Transportation presents a major challenge to curbing climate change. Better-informed policymaking requires up-to-date empirical data with good quality, low cost, and easy access. Along with the prevalence of digital technologies, emerging data sources provide us large amount data of human movements and transport systems. How can we use them to gain new insights? This thesis is a practice to answer this question.
 
-**Click** As examples of emerging data sources, Figure 3 visualises geotagged tweets and road networks of Stockholm region.
+**[Click]** As examples of emerging data sources, Figure 3 visualises geotagged tweets and road networks of Stockholm region.
 
 ## Research questions and present work
 (01:32, 03:58)
 
-**Click** This thesis asks two questions. First, what are the potentials and limitations of using emerging data sources for modelling mobility?
+**[Click]** This thesis asks two questions. First, what are the potentials and limitations of using emerging data sources for modelling mobility?
 
 Second, how can new data sources be properly modelled for characterising transport modal disparities?
 
-**Click** The appended papers are organised under two research questions highlighting the use of emerging data sources. However, this thesis thematically tells a single story from understanding to applying. It starts from the population heterogeneity on the fundamental aspects of mobility in Paper I, a more systematic exploration of the data feasibility for travel demand estimation in Paper II, towards a more practical direction --- addressing the identified issue of data sparsity with a new model for synthetic travel demand in Paper III. 
+**[Click]** The appended papers are organised under two research questions highlighting the use of emerging data sources. However, this thesis thematically tells a single story from understanding to applying. It starts from the population heterogeneity on the fundamental aspects of mobility in Paper I, a more systematic exploration of the data feasibility for travel demand estimation in Paper II, towards a more practical direction --- addressing the identified issue of data sparsity with a new model for synthetic travel demand in Paper III. 
 
 Then the research continues with putting the movements of people into its context, transport systems by involving more diverse data sources beyond geolocations of people's movements. Paper IV-V provide the insights into the disparities between car and public transit about travel time and modal competition. The results have a high spatiotemporal resolution, and are useful for guiding transport planning and policymaking to make public transit more attractive.
 
@@ -136,16 +130,20 @@ Let's switch to the population level to look at the feasibility of using geotagg
 
 **[Click]** To make more data usable, we propose a density-based approach. 
 
-**[Click]** In the literature, two consecutive geotagged tweets by one person make a trip as shown in the left side. However, we already know that Twitter users do not geotweet everyday or every location. So, this trip-based way needs to filter out a lot of trips that have unreasonably long time interval. This makes the sparse Twitter data even more sparse. In this density-based approach on the right side, we use population and the count of geotagged tweets to decide the trips between traffic zones. It increases sample size a lot and results in a more robust and accurate estimation of the overall travel demand.
+**[Click]** In the literature, two consecutive geotagged tweets by one person make a trip as shown in the left side. However, we already know that Twitter users do not geotweet everyday or every location. So, this trip-based way needs to filter out a lot of unreasonable trips. This makes the sparse Twitter data even more sparse. In this density-based approach on the right side, we use population and the count of geotagged tweets to decide the trips between traffic zones. It increases sample size a lot and results in a more robust and accurate estimation of the overall travel demand.
 
 ## Extending the use by innovative approaches - 1
 (01:08, 12:00)
 
 The more complete the data, the better picture of human mobility they provide. Given the sparsity of geotagged tweets, the feasibility of using them is limited. However, we can extend the use by innovative approaches.
 
-**[Click]** We have talked about the density-based approach for travel demand estimation which gives better results by using more data. In paper III, we further develope an individual-based mobility model that fills the gaps in geotagged tweets. The model is designed to correct behaviour bias and sparsity issue we have discussed.
+**[Click]** We have talked about the density-based approach for travel demand estimation which gives better results by using more data.
 
-**[Click]** The model takes the input of sparse mobility traces that can not be directly converted to trips, because they are sparse in time. As we can see on the left side. The model uses the fundamental mechanisms of mobility to synthesise mobility traces based on individual data, so the output can be converted to representative daily trips, as shown on the right side.
+**[Click]** In paper III, we further develope an individual-based mobility model that fills the gaps in geotagged tweets. The model is designed to correct behaviour bias and sparsity issue we have discussed.
+
+**[Click]** As we can see on the left side, the model takes the input of sparse mobility traces that can not be directly converted to trips, because they are sparse in time. 
+
+**[Click]** As shown on the right side, the model uses the fundamental mechanisms of mobility to synthesise mobility traces based on individual data, so the output can be converted to representative daily trips.
 
 ## Extending the use by innovative approaches - 2
 (00:40, 12:40)

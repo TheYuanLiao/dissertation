@@ -297,7 +297,7 @@ The reliability of estimated commuting trips using geotagged tweets is low.<foot
 <span class="badge rounded-pill bg-primary" style="color:white">A density-based approach</span> 
 <span class="badge rounded-pill bg-secondary" style="color:white">A mobility model</span>
 
-- <p>**A density-based approach** is proposed to increase sample size:</p>
+- <p>A density-based approach is proposed to increase **sample size**:</p>
 </div>
 
 <div style="float: right; width: 66%;">
@@ -309,21 +309,21 @@ The reliability of estimated commuting trips using geotagged tweets is low.<foot
 <div>
 <span class="badge rounded-pill bg-secondary" style="color:white">A density-based approach</span> 
 <span class="badge rounded-pill bg-primary" style="color:white">A mobility model</span>
+</div>
 
+<div>
 - <p>**An individual-based mobility model**<footnote>Paper III</footnote> fills the gaps in sparse mobility data, particularly geolocations of social media data.</p>
 - <p>The model is designed to correct behaviour bias and sparsity issue.</p>
 </div>
 
-<div>
-<table style="white-space:nowrap;width:100%;">
-  <tr>
-    <td><p style="font-size:24px">**Input**- sparse mobility traces <br>that can not be directly converted to trips.</p></td>
-    <td rowspan="2"><center>![](figs/input_output.png){width=65%}</center></td>
-  </tr>
-  <tr>
-    <td><p style="font-size:24px">**Output**- synthesised mobility <br>converted to daily trips.</p></td>
-  </tr>
-</table>
+<div style="float: left; width: 49%;">
+<p><small>**Input**- sparse mobility traces that can not be directly converted to trips.</small></p>
+<center>![](figs/input_output_input.png){width=30%}</center>
+</div>
+
+<div style="float: right; width: 49%;">
+<p><small>**Output**- synthesised mobility converted to daily trips.</small></p>
+<center>![](figs/input_output_output.png){width=30%}</center>
 </div>
 
 ## Extending the use by innovative approaches {.build}
