@@ -342,7 +342,9 @@ The reliability of estimated commuting trips using geotagged tweets is low.<foot
 
 ## RQ2 Transport modal disparities
 ### Movements in context, data beyond geotagged tweets
-<center>![](figs/thesis_present_work_modes.png){width=60%}</center>
+<br>
+<br>
+<center>![](figs/thesis_present_work_modes.png){width=80%}</center>
 
 ## Spatiotemporal patterns of travel time {.build}
 <div style="float: left; width: 40%;">
@@ -401,13 +403,9 @@ Spatiotemporal dynamics of travel time ratio (R)<footnote>Paper IV</footnote>.
 ## Modal competition: ride-sourcing vs. public transit {.build}
 <div>
 - <p>The transit-competing trips account for 48.2%.</p>
-</div>
 
-<div>
 <center><p><small>Fig. 15 Hot spots of ride-sourcing trips.<footnote>Paper V</footnote></p></small></center>
 <center>![](figs/hot_spot.png){width=100%}</center>
-
-- <p>The non-transit-competing trips tend to have a more spread-out distribution of pick-up and drop-off hot spots, including the international airport.</p>
 </div>
 
 ## Data fusion approaches {.build}
@@ -460,10 +458,6 @@ Spatiotemporal dynamics of travel time ratio (R)<footnote>Paper IV</footnote>.
 
 ## Modal competition: ride-sourcing vs. public transit {.build}
 ### Selective recommendations
-<div>
-- <p>`r emoji('airplane')` Improve PT services that provide access to the international airport (informed by ride-sourcing hot spots);</p>
-</div>
-
 <div>
 - <p>`r emoji('bus')` Expand PT networks guided by the transit-competing ride-sourcing trips featuring short travel time but a big gap between the two modes;</p>
 </div>
