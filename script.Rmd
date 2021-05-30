@@ -1,10 +1,10 @@
 ---
 title: "Script"
 author: "Yuan Liao"
-date: "5/11/2021"
+date: "5/30/2021"
 output:
-  pdf_document: default
   html_document: default
+  pdf_document: default
 ---
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
@@ -266,9 +266,9 @@ After the data enrichment, the ride-sourcing trips are ready for the analysis. N
 ## Outlook - 1
 (90, 1696)
 
-Paper I to V use emerging data sources in mobility and transport from the exploratory stage to the application side. After four-year research, compared with much more knowledge still needed, this doctoral research is just a start. I believe the future work should ask relevant questions with powerful and innovative tools without constraining the research into specific data sources. There are four directions I'd like to pursue in the future.
+After four-year research, compared with much more knowledge still needed, this doctoral research is just a start. I believe the future work should ask relevant questions with powerful and innovative tools without constraining the research into specific data sources. There are four directions I'd like to pursue in the future.
 
-**[Click]** The first direction is to extend the use of social media data for mobility modelling. Besides the continuous effort of debiasing this data source, long-distance travels could be a reasonable research object using this data source. Becayse we can get many leisure activities and international travels from it.
+**[Click]** The first direction is to extend the use of social media data for mobility modelling. Besides the continuous effort of debiasing this data source, long-distance travels could be a reasonable research object using this data source. Because we can get many leisure activities and international travels from it.
 
 This thesis focuses on the geolocations of Twitter data, while the text part is rich in information and can provide better context together with the geolocation part.
 
@@ -277,12 +277,13 @@ This thesis focuses on the geolocations of Twitter data, while the text part is 
 ## Outlook - 2
 (90, 1786)
 
-The transport sector accounts for a big share of carbon emissions. It is valuable to seek concrete policy implications of minimising the carbon footprint from the transport sector in cities.
+The transport sector accounts for a big share of carbon emissions. It is valuable to seek concrete policy implications of minimising its carbon footprint.
 
-**[Click]** One way of doing this is to combine multi-modal trip data for occupancy, shareability, and electrification of new mobility services provided by TNCs. 
-**[Click]** This thesis has used a series of metrics and models from network science. However, the perspective of networks has only been implicit, and the use of network science tools has been superficial and practical. I found the perspective of networks interesting and powerful to reveal the patterns of urban mobility that no other tools are capable of. 
+**[Click]** One way of doing this is to combine multi-modal trip data to explore the issues of occupancy, shareability, and electrification of new mobility services provided by TNCs.
 
-One direction that I haven't had time to pursue is to study the relationship between user/traveller friendship networks (abstract) and their mobility networks (spatial). This tells us about social segregation and how such segregation and spatial interactions shape each other. Along this direction, advanced techniques from graph learning and complex systems will contribute to urban mobility research together with the increasingly available data.
+**[Click]** This thesis has used a series of metrics and models from network science. The perspective of networks interesting and powerful to reveal the patterns of urban mobility that no other tools are capable of. 
+
+One direction that I haven't had time to pursue is to study the relationship between user or traveller friendship networks and their mobility networks. This tells us about social segregation and how such segregation and spatial interactions shape each other. Along this direction, advanced techniques from graph learning and complex systems will contribute to urban mobility research together with the increasingly available data.
 
 ## Thanks for listening!
 (14, 1800)
