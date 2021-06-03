@@ -2,7 +2,7 @@
 title: "Understanding Mobility and Transport Modal Disparities Using Emerging Data Sources: <br> Modelling Potentials and Limitations"
 subtitle: "Thesis for the Degree of Doctor of Philosophy"
 author: "Yuan Liao"
-date: "6/16/2021"
+date: "16/06/2021"
 output:
   ioslides_presentation:
     widescreen: true
@@ -43,6 +43,23 @@ knitr::opts_chunk$set(echo = FALSE)
 library(emojifont)
 ```
 
+
+## Background {.build data-background="figs/transportation_background.png"}
+<div>
+- <p>Transportation presents a major challenge to curbing climate change.</p>
+</div>
+
+<div>
+- <p>Better informed policymaking requires up-to-date empirical data with **good quality**, **low cost**, and **easy access**.</p>
+</div>
+
+<div>
+- <p>Emerging data sources enable deep and new insights from large-scale collection of **human movement** and **transport systems**.</p>
+
+<center>![](figs/emerging_sources.png){width=80%}</center>
+</div>
+
+
 ## What is human mobility?
 
 The geographic displacement of human beings in space and time, seen as **individuals** or **groups**.
@@ -50,11 +67,11 @@ The geographic displacement of human beings in space and time, seen as **individ
 
 <div id="images">
   <figure>
-      <figcaption><p><small>Fig. 1 Individual movements.</small></p></figcaption>
+      <figcaption><p><small>Individual movements</small></p></figcaption>
       <img src='figs/moveVis.gif' alt='missing' height="350"/>
   </figure>
   <figure>
-      <figcaption><p><small>Fig. 2 Trips from groups of people.</small></p></figcaption>
+      <figcaption><p><small>Trips from groups of people</small></p></figcaption>
       <img src='figs/tw_odm_komm.png' alt='missing' height="350"/>
   </figure>
 </div>
@@ -78,25 +95,15 @@ Through a variety of transport modes, e.g.,
 - <p>Spatiotemporal distributions of travel time and trips</p>
 </div>
 
-## Background {.build}
-
-<div style="float: left; width: 50%;">
-- <p>Transportation presents a major challenge to curbing climate change.</p>
-- <p>Better informed policymaking requires up-to-date empirical data with **good quality**, **low cost**, and **easy access**.</p>
-- <p>Emerging data sources enable deep and new insights from large-scale collection of **human movement** and **transport systems**.</p>
-</div>
-
-<div style="float: right; width: 50%;">
-<p><small>Fig. 3 Tweets and road networks (car + public transit) in Stockholm region</small></p>
-<center>![](figs/emerging_sources.png){width=100%}</center>
-</div>
 
 ## Research questions and present work {.build}
 
 <div>
-1. What are the potentials and limitations of using emerging data sources for modelling mobility?
+<p>RQ1 What are the potentials and limitations of using emerging data sources for modelling mobility?</p>
+</div>
 
-2. How can new data sources be properly modelled for characterising transport modal disparities?
+<div>
+<p>RQ2 How can new data sources be properly modelled for characterising transport modal disparities?</p>
 </div>
 
 <div>
@@ -143,54 +150,13 @@ Through a variety of transport modes, e.g.,
 </table>
 </div>
 
-## Methodology {.columns-2}
-<center>![](figs/methodology.png){width=90%}<p><small>Fig. 4 Methodology</small></p></center>
+## Methodology
 
-<br>
-<br>
-<table class="table table-hover">
-  <thead>
-    <tr>
-      <td rowspan="2" style="vertical-align : middle;">Method</td>
-      <td colspan="5"><center>Paper</center></td>
-    </tr>
-    <tr>
-      <th scope="col">I</th>
-      <th scope="col">II</th>
-      <th scope="col">III</th>
-      <th scope="col">IV</th>
-      <th scope="col">V</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr class="table-light">
-      <th scope="row">Data mining</th>
-      <th scope="col">`r emoji('heavy_check_mark')`</th>
-      <th scope="col"></th>
-      <th scope="col"></th>
-      <th scope="col"></th>
-      <th scope="col">`r emoji('heavy_check_mark')`</th>
-    </tr>
-    <tr class="table-light">
-      <th scope="row">Mobility metrics and models</th>
-      <th scope="col">`r emoji('heavy_check_mark')`</th>
-      <th scope="col">`r emoji('heavy_check_mark')`</th>
-      <th scope="col">`r emoji('heavy_check_mark')`</th>
-      <th scope="col">`r emoji('heavy_check_mark')`</th>
-      <th scope="col">`r emoji('heavy_check_mark')`</th>
-    </tr>
-    <tr class="table-light">
-      <th scope="row">Methods in transport geography</th>
-      <th scope="col"></th>
-      <th scope="col"></th>
-      <th scope="col"></th>
-      <th scope="col">`r emoji('heavy_check_mark')`</th>
-      <th scope="col">`r emoji('heavy_check_mark')`</th>
-    </tr>
-  </tbody>
-</table>
+<center>![](figs/methodology_2.png){width=80%}</center>
 
-## RQ1 Potentials and limitations of geotagged tweets {.build}
+# RQ1 What are the potentials and limitations of using geotagged tweets for modelling mobility?
+
+## RQ1 Geotagged tweets, pros and cons {.build}
 <table>
   <tbody>
     <tr>
@@ -213,44 +179,47 @@ Through a variety of transport modes, e.g.,
   - <p>**Sparse sampling** of the actual mobility.</p>
   - <p>**Behaviour bias** of reporting geolocations.</p>
 </div>
-## Limitations: sparse sampling of the actual mobility {.build}
+
+## RQ1 Limitations: sparse sampling of the actual mobility | (Paper III){.build}
+<div style="float: left; width: 49%;">
 - <p>Twitter users DO NOT geotweet every day.</p>
+
+<center>![](figs/dis_pres_sparsity_1.png){width=80%}</center>
+</div>
+
+<div style="float: right; width: 49%;">
 - <p>Twitter users DO NOT geotweet every location visited.</p>
 
-<center>![](figs/dis_pres_sparsity.png){width=80%}<p><small>Fig. 5 Sparsity issue.<footnote>Data used in Paper III</footnote></small></p></center>
+<center>![](figs/dis_pres_sparsity_2.png){width=80%}</center>
+</div>
 
-## Limitations: behaviour bias of overly reporting leisure/night activities {.build}
+## RQ1 Limitations: behaviour bias of overly reporting leisure/night activities | (Paper I){.build}
+<div> 
+Uncommon places and leisure activities more than regularly visited places, e.g., home and workplace.
+</div>
 
 <div> 
-Uncommon places and leisure activities >> regularly visited places, e.g., home and workplace.
+<center>![](figs/dis_pres_behaviour_bias_marked.png){width=100%}</center>
 </div>
+
+## RQ1 Limitations: not for commuting travel demand estimation | (Paper II){.build}
 
 <div> 
-<center>![](figs/dis_pres_behaviour_bias.png){width=80%}<p><small>Fig. 6 Behaviour bias.<footnote>Data used in Paper I</footnote></small></p></center>
+The reliability of estimated commuting trips using geotagged tweets is low.
 </div>
 
-## Limitations: not for commuting travel demand estimation {.build}
+<div>
+<center><p><small>Commuting trip distance distributions</small></p></center>
 
-<div> 
-The reliability of estimated commuting trips using geotagged tweets is low.<footnote>Paper II</footnote>
+<center>![](figs/commuting_distances.png){width=40%}</center>
+
 </div>
 
-<div style="float: left; width: 65%;">
-<p><small>Fig. 7A Commuting matrices.</small></p>
 
-<center>![](figs/commuting_matrices.png){width=100%}</center>
-</div>
-
-<div style="float: right; width: 34%;">
-<p><small>Fig. 7B Commuting trip distance distributions.</small></p>
-
-<center>![](figs/commuting_distances.png){width=100%}</center>
-</div>
-
-## Potentials at individual level: population heterogeneity on mobility {.build}
+## RQ1 Potentials at individual level: population heterogeneity on mobility | (Paper I) {.build}
 
 <div style="float: left; width: 50%;">
-<p><small>Fig. 8 Four types of travellers.<footnote>Paper I</footnote></small></p>
+<p><small>Four types of travellers</small></p>
 
 <center>![](figs/four_travellers.png){width=100%}</center>
 </div>
@@ -267,208 +236,84 @@ The reliability of estimated commuting trips using geotagged tweets is low.<foot
   - <p>Explorer: decentralised locations that are distant from each other.</p>
 </div>
 
-## Potentials at population level: travel demand modelling {.build}
-
-<span class="badge rounded-pill bg-primary" style="color:white">spatial scale</span> 
-<span class="badge rounded-pill bg-secondary" style="color:white">sampling method</span> 
-<span class="badge rounded-pill bg-secondary" style="color:white">sample size</span>
-
-
-<div>
-- <p>Twitter data are more suitable for **city level** than national level.</p>
-- <p>The main obstacle of using Twitter data at a large spatial scale is the **sparsity**.</p>
-
-<center>![](figs/spatial_scale.png){width=35%}<p><small>Fig. 9 National level (left) vs. city level (right).<footnote>Paper II</footnote></small></p></center>
-
-</div>
-
-## Potentials at population level: travel demand modelling {.build}
-
-<div>
-<span class="badge rounded-pill bg-secondary" style="color:white">spatial scale</span> 
-<span class="badge rounded-pill bg-primary" style="color:white">sampling method</span> 
-<span class="badge rounded-pill bg-primary" style="color:white">sample size</span>
-  
-- <p>**User-based** data collection works better than area-based data collection:</p>
-<p>A much larger number of geotagged tweets, a more complete picture of travel demand.</p>
-</div>
-
-<div style="float: left; width: 33%;">
-<span class="badge rounded-pill bg-primary" style="color:white">A density-based approach</span> 
-<span class="badge rounded-pill bg-secondary" style="color:white">A mobility model</span>
-
-- <p>A density-based approach is proposed to increase **sample size**:</p>
-</div>
-
-<div style="float: right; width: 66%;">
-<p><small>Fig. 10 Trip-based approach (left)<footnote>Lee et al., 2019</footnote> vs. density-based approach (right).<footnote>Paper II</footnote></small></p>
-<center>![](figs/density_approach.png){width=95%}</center>
-</div>
-
-## Extending the use by innovative approaches {.build}
-<div>
-<span class="badge rounded-pill bg-secondary" style="color:white">A density-based approach</span> 
-<span class="badge rounded-pill bg-primary" style="color:white">A mobility model</span>
-</div>
-
-<div>
-- <p>**An individual-based mobility model**<footnote>Paper III</footnote> fills the gaps in sparse mobility data, particularly geolocations of social media data.</p>
-- <p>The model is designed to correct behaviour bias and sparsity issue.</p>
-</div>
-
-<div style="float: left; width: 49%;">
-<p><small>**Input**- sparse mobility traces that can not be directly converted to trips.</small></p>
-<center>![](figs/input_output_input.png){width=30%}</center>
-</div>
-
-<div style="float: right; width: 49%;">
-<p><small>**Output**- synthesised mobility converted to daily trips.</small></p>
-<center>![](figs/input_output_output.png){width=30%}</center>
-</div>
-
-## Extending the use by innovative approaches {.build}
-<div>
-<span class="badge rounded-pill bg-secondary" style="color:white">A density-based approach</span> 
-<span class="badge rounded-pill bg-primary" style="color:white">A mobility model</span>
-
-- <p>The model-synthesised results have good agreements with the other data sources.</p>
-</div>
-
-<div>
-- <p>An application: characterising trip distance distributions (domestic) of global regions:</p>
-
-<center>![](figs/model_distributions.png){width=100%}<p><small>Fig. 11 Distributions of synthesised domestic trips.<footnote>Paper III</footnote></small></p></center>
-</div>
-
-## RQ2 Transport modal disparities
-### Movements in context, data beyond geotagged tweets
-<br>
-<br>
-<center>![](figs/thesis_present_work_modes.png){width=80%}</center>
-
-## Spatiotemporal patterns of travel time {.build}
-<div style="float: left; width: 40%;">
-Data fusion framework for travel time calculation<footnote>Paper IV</footnote>:
-
-<center>![](figs/travel_time_framework.png){width=100%}</center>
-</div>
-
-<div style="float: right; width: 57%;">
-Distribution of geotagged tweets represents the dynamic attractiveness of locations in cities.
-
-<center>![](figs/geotw_desti_animation.gif){width=60%}<p><small>Fig. 12 Geotagged tweets as destinations by hour of day (Stockholm region).</p></small></center>
-</div>
-
-## Spatiotemporal patterns of travel time {.build}
-<div style="float: left; width: 50%;">
-<center><p><small>Fig. 13 Travel time ratio by hour of day (Sydney).</p></small></center>
-<center>![](figs/tt_sydney_animation.gif){width=80%}</center>
-
-Spatiotemporal dynamics of travel time ratio (R)<footnote>Paper IV</footnote>.
-</div>
-
-<div style="float: right; width: 50%;">
-<center><p><small>Fig. 14 Travel time ratio over 24 hours.</p></small></center>
-<center>![](figs/travel_time_ratio_24_hours.png){width=80%}</center>
-
-- <p>Travel time by PT is around twice as high as by car.</p>
-- <p>PT can compete with car use during peak rush hours in Stockholm and Amsterdam.</p>
-
-</div>
-
-## Modal competition: ride-sourcing vs. public transit {.build}
-<div>
+## RQ1 Potentials at population level: travel demand modelling | (Paper II) {.build}
 <table>
   <tbody>
     <tr>
-      <th scope="row"><center>![](figs/modes.png){width=80%}</center></th>
-      <td><p><h4>Does ride-sourcing complement, or compete with, public transit?</h4></p></td>
+      <th width="20%" scope="row"><span class="badge rounded-pill bg-primary" style="color:white">spatial scale</span></th>
+      <td><p style="font-size:26px">Twitter data are more suitable for **city level** than national level (in Sweden).</p></td>
     </tr>
   </table>
 </table>
+
+<table>
+  <tbody>
+    <tr>
+      <th width="20%" scope="row"><span class="badge rounded-pill bg-primary" style="color:white">sampling method</span></th>
+      <td><p style="font-size:26px">**User-based** data collection works better than area-based data collection.</p></td>
+    </tr>
+  </table>
+</table>
+
+<table>
+  <tbody>
+    <tr>
+      <th width="20%" scope="row"><span class="badge rounded-pill bg-primary" style="color:white">sample size</span></th>
+      <td><p style="font-size:26px">A much larger number of geotagged tweets, a more complete picture of travel demand.</p></td>
+    </tr>
+  </table>
+</table>
+
+
+## RQ1 Extending the use by innovative approaches | (Paper II) {.build}
+
+<div>
+<p>A density-based approach is proposed to increase **sample size** for estimating travel demand.</p>
+</div>
+
+<div style="float: left; width: 33%;">
+<p><small>Trip-based approach in the literature<footnote>Lee et al., 2019</footnote></small></p>
+<center>![](figs/density_approach_1.png){width=80%}</center>
+</div>
+
+<div style="float: right; width: 66%;">
+<p><small>Our density-based approach</small></p>
+<center>![](figs/density_approach_2.png){width=80%}</center>
 </div>
 
 <div>
+<p>increases the accuracy of the estimation by 10%--60%.</p>
+</div>
 
-- <p class="text-info">How large is the share of ride-sourcing trips that can be **substituted** by taking public transit, if you are willing to walk up to **800 m** to access and leave the transit station during daytime?</p>
+## RQ1 Extending the use by innovative approaches | (Paper III) {.build}
 
+<div>
+- <p>**An individual-based mobility model** is proposed to fill the gaps in sparse mobility data.</p>
+- <p>The model is designed to correct behaviour bias and sparsity issue.</p>
+</div>
+
+<div style="float: left; width: 33%;">
+<p><small>**Input**- sparse mobility traces.</small></p>
+<center>![](figs/input_output_input.png){width=55%}</center>
+</div>
+
+<div style="float: right; width: 66%;">
+<p><small>**Output**- synthesised mobility converted to daily trips.</small></p>
+<center>![](figs/input_output_output.png){width=85%}</center>
+</div>
+
+## RQ1 Extending the use by innovative approaches | (Paper III) {.build}
+<div>
+- <p>The model-synthesised results have good performance.</p>
 </div>
 
 <div>
-- <p>Ride-sourcing trips: transit-competing vs. non-transit-competing.</p>
-  - <p>What **trip attributes** and **built environment** are linked to the competition?</p>
-  - <p>What are the implications for policymaking?</p>
+- <p>An application: characterising trip distance distributions (domestic) of global regions' residents:</p>
+
+<center>![](figs/model_distributions.png){width=95%}</center>
 </div>
 
-## Modal competition: ride-sourcing vs. public transit {.build}
-<div>
-- <p>The transit-competing trips account for 48.2%.</p>
-
-<center><p><small>Fig. 15 Hot spots of ride-sourcing trips.<footnote>Paper V</footnote></p></small></center>
-<center>![](figs/hot_spot.png){width=100%}</center>
-</div>
-
-## Data fusion approaches {.build}
-
-<div>
-<span class="badge rounded-pill bg-secondary" style="color:white">For travel time calculation</span> 
-<span class="badge rounded-pill bg-primary" style="color:white">For open trip data analysis</span>
-</div>
-
-<div>
-- <p>Collected from a large area and population but at a cost of rich detail.</p>
-- <p>Raw data: trip ID, pick-up and drop-off locations, pick-up and drop-off times, and cost.</p>
-</div>
-
-<div>
-<center><p><small>Fig. 16 Data enrichment for ride-sourcing trip data.<footnote>Paper V</footnote></p></small></center>
-
-<center>![](figs/modal_competition_framework.png){width=95%}</center>
-</div>
-
-## Modal competition: ride-sourcing vs. public transit {.build}
-### Model and impact of travel time and public-transit transfer
-<div>
-<p>A glass-box model enhanced by machine learning techniques: **additive** impact of **factors** and factor **interactions**.</p>
-</div>
-
-<div style="float: left; width: 55%;">
-<p><small>Fig. 17 Impact of travel time by ride-sourcing (left) and transfer (right).<footnote>Paper V</footnote></p></small><center>![](figs/modal_competition_tt_transfers.png){width=100%}</center>
-</div>
-
-<div style="float: right; width: 44%;">
-- <p>Competition is more likely to happen when the **travel time** by ride-sourcing < 15 min.</p>
-- <p>Requiring multiple **transfers** is associated with the competition between.</p>
-</div>
-
-## Modal competition: ride-sourcing vs. public transit {.build}
-### Impact of land-use patterns
-<div style="float: left; width: 31%;">
-<p>Land-use clusters of the study area.</p>
-<center>![](figs/modal_competition_clusters.png){width=100%}</center>
-</div>
-
-
-<div style="float: right; width: 68%;">
-<center><p><small>Fig. 18 Impact of land-use cluster and its interaction with transfer.<footnote>Paper V</footnote></p></small>![](figs/modal_competition_built_environment.png){width=82%}</center>
-
-- <p>Low density/diversity of **land use** -> a lower probability of competition.</p>
-- <p>Multiple **transfers** + middle density/diversity of **land use** -> a higher probability of competition.</p>
-</div>
-
-## Modal competition: ride-sourcing vs. public transit {.build}
-### Selective recommendations
-<div>
-- <p>`r emoji('bus')` Expand PT networks guided by the transit-competing ride-sourcing trips featuring short travel time but a big gap between the two modes;</p>
-</div>
-
-<div>
-- <p>`r emoji('moneybag')` Incentivise the ride-sourcing trips that fill the gaps in the PT services that take a long time or require lengthy walking and transfers connecting to suburban areas.</p>
-...
-</div>
-
-## A summary of answers {.build}
-### RQ1 Potentials and limitations for modelling mobility
+## A summary of answers to RQ1 | Potentials and limitations of geotagged tweets for modelling mobility {.build}
 
 <div>
 - <p>`r emoji('o')` `r emoji('heavy_exclamation_mark')` Easy access, low cost, but with biased population, behaviour bias, and sparsity issue.</p>
@@ -489,8 +334,181 @@ Spatiotemporal dynamics of travel time ratio (R)<footnote>Paper IV</footnote>.
 - <p>`r emoji('wrench')` Innovative approaches for correcting the biases and increasing available data.</p>
 </div>
 
-## A summary of answers {.build}
-### RQ2 Characterising transport modal disparities
+# RQ2 How can new data sources be properly modelled for characterising transport modal disparities?
+
+## RQ2 Spatiotemporal patterns of travel time: data fusion approach | (Paper IV) {.build}
+<div style="float: left; width: 40%;">
+Data fusion framework for travel time calculation:
+
+<center>![](figs/travel_time_framework.png){width=100%}</center>
+</div>
+
+<div style="float: right; width: 57%;">
+Distribution of geotagged tweets represents the dynamic attractiveness of locations in cities.
+
+<center>![](figs/geotw_desti_animation.gif){width=60%}</center>
+</div>
+
+## RQ2 Spatiotemporal patterns of travel time | (Paper IV) {.build}
+<div style="float: left; width: 50%;">
+<center><p><small>Travel time ratio (R) by hour of day (Sydney)</p></small></center>
+<center>![](figs/tt_sydney_animation.gif){width=90%}</center>
+</div>
+
+<div style="float: right; width: 50%;">
+<center><p><small>Travel time ratio (R) over 24 hours</p></small></center>
+<center>![](figs/travel_time_ratio_24_hours.png){width=80%}</center>
+
+- <p>Travel time by PT is around twice as high as by car.</p>
+- <p>PT can compete with car use during peak rush hours in Stockholm and Amsterdam.</p>
+
+</div>
+
+## RQ2 Modal competition: ride-sourcing vs. public transit | (Paper V) {.build}
+<div>
+<table>
+  <tbody>
+    <tr>
+      <th scope="row"><center>![](figs/modes.png){width=60%}</center></th>
+      <td><p><h5>Does ride-sourcing complement, or compete with, public transit?</h5></p></td>
+    </tr>
+  </table>
+</table>
+</div>
+
+<div>
+
+- <p class="text-info">How large is the share of ride-sourcing trips that can be **substituted** by taking public transit, if you are willing to walk up to **800 m** to access and leave the transit station during daytime?</p>
+
+</div>
+
+<div>
+- <p>Ride-sourcing trips: transit-competing vs. non-transit-competing.</p>
+  - <p>What **trip attributes** and **built environment** are linked to the competition?</p>
+  - <p>What are the implications for policymaking?</p>
+</div>
+
+## RQ2 Modal competition: ride-sourcing vs. public transit | (Paper V) {.build}
+<div>
+- <p>The transit-competing trips account for 48.2% of the overall 4.3 million ride-sourcing trips.</p>
+
+<center><p><small>Hot spots of ride-sourcing trips</p></small></center>
+<center>![](figs/hot_spot.png){width=100%}</center>
+</div>
+
+## RQ2 Modal competition: data fusion approach and model | (Paper V) {.build}
+
+- <p>Big mode-specific trip data are often collected from a large area and population, but at a cost of **rich detail**.</p>
+
+<div style="float: left; width: 20%;">
+<table class="table table-hover">
+  <thead>
+    <tr class="table-active">
+      <th scope="row">Raw data</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="table-active">
+      <th scope="row">trip ID</th>
+    </tr>
+    <tr class="table-active">
+      <th scope="row">pick-up/drop-off locations</th>
+    </tr>
+    <tr class="table-active">
+      <th scope="row">pick-up/drop-off times</th>
+    </tr>
+    <tr class="table-active">
+      <th scope="row">cost</th>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div style="float: right; width: 79%;">
+<table class="table table-hover">
+  <thead>
+    <tr class="table-light">
+      <th scope="row"></th>
+      <th scope="row">Enriched variables</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr class="table-light">
+      <th scope="row">Trip attributes</th>
+      <th scope="row">`r emoji('bus')` public transit information, e.g., travel time</th>
+    </tr>
+    <tr class="table-light">
+      <th scope="row"></th>
+      <th scope="row">`r emoji('sunny')` weather condition</th>
+    </tr>
+    <tr class="table-light">
+      <th scope="row"></th>
+      <th scope="row">`r emoji('spider_web')` demand-based communities (by trip-based network)</th>
+    </tr>
+    <tr class="table-light">
+      <th scope="row">Built environment</th>
+      <th scope="row">`r emoji('busstop')` transit-stop density</th>
+    </tr>
+    <tr class="table-light">
+      <th scope="row"></th>
+      <th scope="row">`r emoji('hotel')` functional regions (by points of interest)</th>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+<div style="float: left; width: 100%;">
+- <p>A glass-box model enhanced by machine learning techniques: **additive** impact of **variables** and variable **interactions**.</p>
+</div>
+
+## RQ2 Modal competition: impact of land-use | (Paper V) {.build}
+
+<div style="float: left; width: 49%;">
+<p>Land-use clusters of the study area</p>
+<center>![](figs/modal_competition_clusters.png){width=100%}</center>
+</div>
+
+
+<div style="float: right; width: 49%;">
+<center>![](figs/modal_competition_built_environment_1.png){width=82%}</center>
+</div>
+
+<div style="float: left; width: 100%;">
+- <p>Low density/diversity of **land use** -> a lower probability of competition.</p>
+</div>
+
+## RQ2 Modal competition: impact of land-use x transit boardings | (Paper V) {.build}
+
+<div style="float: left; width: 49%;">
+<p>Land-use clusters of the study area</p>
+<center>![](figs/modal_competition_clusters.png){width=100%}</center>
+</div>
+
+
+<div style="float: right; width: 49%;">
+<center>![](figs/modal_competition_built_environment_2.png){width=82%}</center>
+</div>
+
+<div style="float: left; width: 100%;">
+- <p>Multiple **transfers** + middle density/diversity of **land use** -> a higher probability of competition.</p>
+</div>
+
+## RQ2 Modal competition: selective recommendations | (Paper V) {.build}
+
+<div>
+- <p>`r emoji('bus')` Expand PT networks guided by the transit-competing ride-sourcing trips featuring</p>
+  - <p>short travel time by ride-sourcing (< 15 min)</p>
+  - <p>large travel time ratio between the two modes;</p>
+</div>
+
+<div>
+- <p>`r emoji('moneybag')` Incentivise the ride-sourcing trips that fill the gaps in the PT services which</p>
+  - <p>take a long time</p>
+  - <p>require lengthy walking</p>
+  - <p>require multiple transfers connecting to suburban areas.</p>
+</div>
+
+## A summary of answers to RQ2 | Characterising transport modal disparities between public transit and car & ride-sourcing {.build}
 
 <div>
 - <p>`r emoji('package')` Importance of data fusion approaches, especially given more and more open but incomplete data.</p>
@@ -508,37 +526,55 @@ Spatiotemporal dynamics of travel time ratio (R)<footnote>Paper IV</footnote>.
 - <p>`r emoji('round_pushpin')` For making public transit more competitive, spatiotemporal details add nuanced insights to identify gaps and opportunities.</p>
 </div>
 
+## Knowledge contributions {.build}
+<center>![](figs/contribution_knowledge.png){width=80%}</center>
+
+<div>
+- <p>Provide validation to identify the limitations of geotagged tweets: **behavior bias**, **biased population**, and **sparsity issue**.</p>
+</div>
+
+<div>
+- <p>Reveal the potentials of geotagged tweets at both **individual** and **population** level.</p>
+</div>
+
+<div>
+- <p>Reveal the spatio-temporal disparities between car/ride-sourcing and public transit about **travel time** and **modal competition**.</p>
+</div>
+
+## Methodological contributions {.build}
+<center>![](figs/contribution_methodology.png){width=100%}</center>
+
+<div>
+- <p>Propose **a density approach** and **an individual-based mobility model** for travel demand estimation, addressing sparsity issue and behaviour bias of geotagged tweets.</p>
+</div>
+
+<div>
+- <p>Create two reproducible **data fusion frameworks** integrating multiple data sources from transport systems for characterising modal disparities.</p>
+</div>
+
 ## Outlook {.build}
 <div>
 - <p>![](figs/tw_blue.png){width=3%} Extending the use of social media data for mobility modelling.</p>
-  - <p>De-biasing the data source.</p>
-  - <p>Long-distance travels.</p>
-  - <p>Combining the textual information with the location part.</p>
 </div>
 
 <div>
 - <p>`r emoji('globe_with_meridians')` Generating global synthetic mobility data for improving travel demand projections.</p>
-  - <p>Bigger picture: energy systems' modelling for the transport sector.</p>
 </div>
 
-## Outlook {.build}
 <div>
-- <p>`r emoji('blue_car')` & `r emoji('tram')` `r emoji('bike')` `r emoji('taxi')` `r emoji('bus')` `r emoji('train')` Combining multi-modal trip data for reducing transport carbon emissions.</p>
-  - <p>Occupancy, shareability, and electrification of new mobility services provided by transportation network companies (TNCs).</p>
+- <p>`r emoji('blue_car')` & `r emoji('tram')` `r emoji('bike')` `r emoji('taxi')` `r emoji('bus')` `r emoji('train')` Combining multi-modal trip data to explore occupancy, shareability, and electrification of new mobility services for reducing transport carbon emissions.</p>
 </div>
 
 <div>
 - <p>`r emoji('spider_web')` Introducing the perspective of networks.</p>
-  - <p>The relationship between user/traveller friendship networks (abstract) and their mobility networks (spatial).</p>
-  - <p>How social segregation and spatial interactions shape each other?</p>
 </div>
 
 ## Thanks for listening! {data-background="figs/end_background.png"}
 Yuan Liao
 
-`r emoji('e-mail')`  yuan.liao@chalmers.se
+`r emoji('e-mail')` yuan.liao@chalmers.se
 
-![](figs/tw_blue.png){width=3%} @TheYuanLiao
+![](figs/tw_blue.png){width=3%} [\@TheYuanLiao](https://twitter.com/TheYuanLiao)
 
 `r emoji('globe_with_meridians')` https://yuanliao.netlify.app/
 
