@@ -3,20 +3,20 @@ title: "Script"
 author: "Yuan Liao"
 date: "06/03/2021"
 output:
-  pdf_document: default
   html_document: default
+  pdf_document: default
 ---
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
 ## Title page
-(30, 30)
+(21)
 
 Good afternoon, everyone. Thank you for coming to my dissertation defense. In the next 30 mins, I will be talking about my doctoral research: Understanding Mobility and Transport Modal Disparities Using Emerging Data Sources: Modelling Potentials and Limitations.
 
 ## Background
-(43, 164)
+(43)
 
 **[Click]** Transportation presents a major challenge to curbing climate change. 
 
@@ -28,7 +28,7 @@ Good afternoon, everyone. Thank you for coming to my dissertation defense. In th
 
 
 ## What is human mobility?
-(48, 78)
+(48)
 
 So, what is human mobility? It refers to the geographic displacement of human beings, seen as individuals or groups, in space and time.
 
@@ -37,7 +37,7 @@ Figure on the left side visualises individual movements of a few Twitter users o
 Understanding human mobility tells us how fast pandemics spread globally, how poverty affects one's travelling behaviour, and where the most attractive places are in a city.
 
 ## How is human mobility supported by transport systems?
-(43, 121)
+(36)
 
 **[Click]** Mobility is supported by a variety of transport modes, such as ride-sourcing like Uber using our smart phones, public transit, and private car.
 
@@ -45,7 +45,7 @@ Understanding human mobility tells us how fast pandemics spread globally, how po
 
 
 ## Research questions and present work
-(107, 271)
+(110)
 
 **[Click]** This thesis asks two questions. First, what are the potentials and limitations of using emerging data sources, particularly geotagged social media data, for modelling mobility?
 
@@ -56,19 +56,22 @@ Second, how can new data sources be properly modelled for characterising transpo
 Then the research continues with putting the movements of people into its context, transport systems by involving more diverse data sources beyond geolocations of people's movements. Paper IV-V provide the insights into the disparities between car and public transit about travel time and modal competition. The results have a high spatiotemporal resolution, and are useful for guiding transport planning and policymaking to make public transit more attractive.
 
 ## Methodology
-(34, 305)
+(38)
 
 The methodological framework of this thesis lies in the applied side of data science. Data science is a multi-disciplinary field that intersects between Computer Science/Information Technology, Mathematics and Statistics, and Domain Knowledge which is mobility in this context.
 
 Methods applied by the appended papers are the intersections of each pair of these components. They are data mining, mobility metrics and models, and methods in transport geography.
 
 ## RQ1 What are the potentials and limitations of using geotagged tweets for modelling mobility?
+(27)
+
 After introducing what this thesis is about, let's take a look at the first research question. What are the potentials and limitations of geotagged tweets for modelling mobility?
 
-In this part, I will introduce the main findings from the first three appended papers.
+In this part, I will introduce the main findings from the first three appended papers for both limitations and potentials of using this particular data source.
 
 ## RQ1 Geotagged tweets, pros and cons
-(70, 375)
+(54)
+
 **[Click]** Geotagged tweets are the tweets with precise location information when Twitter users actively choose to tag it.
 
 **[Click]** This data source gets increasingly popular due to its easy access, low cost, large spatial and population coverage.
@@ -78,7 +81,7 @@ In this part, I will introduce the main findings from the first three appended p
 We also confirm that the geolocations of tweets are sparse sampling of the actual mobility and they contain behaviour bias because Twitter users selectively report the locations. I will talk about how we reveal the last two limitations in our studies.
 
 ## RQ1 Limitations: sparse sampling of the actual mobility | (Paper III)
-(93, 468)
+(73)
 
 Why do geotagged tweets give incomplete picture of the actual mobility?
 
@@ -93,7 +96,7 @@ For those active days, the number of geolocations per active day is only around 
 Now we see how sparse geotagged tweets are in representing the actual mobility.
 
 ## RQ1 Limitations: behaviour bias of overly reporting leisure/night activities | (Paper I)
-(60, 528)
+(61)
 
 Besides sparsity, another issue is behaviour bias.
 
@@ -102,7 +105,7 @@ Besides sparsity, another issue is behaviour bias.
 **[Click]** These two figures show the share of visited locations over a week for travel survey and geotagged tweets. We can see that travel survey on the left displays a strong regularity of commuting during weekdays. While geotagged tweets on the right are less regular and reported locations increase when the weekend approaches.
 
 ## RQ1 Limitations: not for commuting travel demand estimation | (Paper II)
-(60, 588)
+(45)
 
 Given the behaviour bias of reporting uncommon places more than regularly visited places, 
 
@@ -111,7 +114,7 @@ Given the behaviour bias of reporting uncommon places more than regularly visite
 **[Click]** We have the commuting trip distance distributions of the two data sources, and Twitter gives the estimation that is far off the one from the travel survey as ground truth.
 
 ## RQ1 Potentials at individual level: population heterogeneity on mobility | (Paper I)
-(80, 668)
+(66)
 
 I have shown you those limitations we have revealed in our studies. For the next few slides, I will talk about the revealed potentials of using this data source.
 
@@ -128,7 +131,7 @@ Using clustering analysis on these two dimensions, we found four types of travel
 Now we know geotagged tweets can be used to reveal reasonable individual differences on their travel patterns.
 
 ## RQ1 Potentials at population level: travel demand modelling | (Paper II)
-(40, 708)
+(55)
 
 Let's switch to the population level to look at the feasibility of using geotagged tweets for travel demand modelling. 
 
@@ -141,6 +144,7 @@ How good Twitter data are for travel demand modelling depends on spatial scale, 
 **[Click]** because it gives a much larger number of geotagged tweets and therefore, a more complete picture of travel demand.
 
 ## RQ1 Extending the use by innovative approaches | (Paper II)
+(60)
 
 **[Click]** To make more data usable, we propose a density-based approach.
 
@@ -151,7 +155,7 @@ How good Twitter data are for travel demand modelling depends on spatial scale, 
 **[Click]** It increases sample size and gives more robust and accurate estimation of the overall travel demand.
 
 ## RQ1 Extending the use by innovative approaches | (Paper III)
-(73, 859)
+(90)
 
 The more complete the data, the better picture of human mobility they provide. Given the sparsity of geotagged tweets, the feasibility of using them is limited. Therefore, we propose approaches to extend the use.
 
@@ -164,7 +168,7 @@ We have talked about the density-based approach for travel demand estimation whi
 **[Click]** As shown on the right side, the model uses the fundamental mechanisms of returning and exploring to synthesise mobility traces, so the output can be converted to representative daily trips.
 
 ## RQ1 Extending the use by innovative approaches | (Paper III)
-(54, 913)
+(45)
 
 **[Click]** The model-synthesised results have good performance.
 
@@ -173,7 +177,7 @@ We have talked about the density-based approach for travel demand estimation whi
 X axis is trip distance and Y axis is probability density. We can use these synthesised data for travel demand estimation. This provides us a solution which can scale up, due to the easy access of social media data.
 
 ## A summary of answers to RQ1 | Potentials and limitations of geotagged tweets for modelling mobility 
-(70, 1544)
+(70)
 
 **[Click]** **[Click]** After selectively showing you some results from answering RQ1, let's recap the answers.
 
@@ -186,28 +190,28 @@ X axis is trip distance and Y axis is probability density. We can use these synt
 **[Click]** At last, we can extend the use by innovative approaches to correct the biases and increase the available data.
 
 # RQ2 How can new data sources be properly modelled for characterising transport modal disparities?
-(86, 999)
+(22)
 
 Now, let's put human movements in their context, transport systems. The second research question looks into how new data sources can be properly modelled for characterising transport modal disparities?
 
 In this part, I will talk about the main findings from the last two appended papers.
 
 ## RQ2 Spatiotemporal patterns of travel time: data fusion approach | (Paper IV)
-(47, 1046)
+(49)
 
 **[Click]** In Paper IV, the main contribution is that we propose a data fusion framework combining travel demand, network operations, and infrastructure. The data fusion framework allows us to calculate travel time with high spatiotemporal resolution, especially through the use of Twitter data as a proxy for time-varying travel demand.
 
 **[Click]** As shown in the animation, the distribution of geotagged tweets represents the attractiveness of various locations in cities and they reveal the dynamics of visits over the course of a day.
 
 ## RQ2 Spatiotemporal patterns of travel time | (Paper IV)
-(56, 1102)
+(65)
 
 **[Click]** We define the travel time ratio as the travel time by public transit divided by the travel time by car. A high modal disparity means taking public transport is much more time-consuming than driving a car. Here we see the 24-hour dynamics of the travel time disparity. The results talk about when and where to improve public transt service in terms of both access and travel time.
 
 **[Click]** We further summarise the travel time disparity across cities which varies over 24 hours, and find that travel time by public transt is around twice as high as by car. It turns out that public transt can compete with car use during peak rush hours in Stockholm and Amsterdam.
 
 ## RQ2 Modal competition: ride-sourcing vs. public transit | (Paper V)
-(104, 1206)
+(113)
 
 People can choose driving their own car or taking public transit. Nowadays, ride-sourcing like Uber has become a popular alternative to driving. 
 
@@ -218,13 +222,13 @@ People can choose driving their own car or taking public transit. Nowadays, ride
 **[Click]** By this definition, we call the ride-sourcing trips that can be substituted by public transit transit-competing, while the ones that can not be substituted as non-transit-competing. What trip attributes and built environment are linked to the competition? What are the implications for policymaking? Before we approach these questions, let's look at the data at our hands.
 
 ## RQ2 Modal competition: ride-sourcing vs. public transit | (Paper V)
-(15, 1221)
+(30)
 
 **[Click]** It turns out that the transit-competing trips account for 48.2% of the total trip records. It means that a considerable share of ride-sourcing trips can be potentially substituted by public transit.
 
 
 ## RQ2 Modal competition: data fusion approach and model | (Paper V)
-(152, 1373)
+(136)
 
 **[Click]** Nowadays, increasingly amount of incomplete but big datasets that are made publicly available, such as ride-sourcing trip data.
 
@@ -241,7 +245,7 @@ After the data enrichment, the ride-sourcing trips are ready for the analysis. N
 **[Click]** For doing so, we use a glass-box model enhanced by machine learning techniques to quantify the impact of the variables and the variable interactions on the competition between the two modes.
 
 ## RQ2 Modal competition: impact of land-use | (Paper V)
-(152, 1373)
+(85)
 
 **[Click]** Using points of interest such as hotel and restaurant, we group the study area into seven clusters. From rural to centre, as color from blue to red, the land-use diversity and intensity increase.
 
@@ -250,14 +254,14 @@ After the data enrichment, the ride-sourcing trips are ready for the analysis. N
 **[Click]** It turns out that low density/diversity of land use lowers the probability of competition between the two modes.
 
 ## RQ2 Modal competition: impact of land-use x transit boardings | (Paper V)
-(152, 1373)
+(60)
 
 **[Click]** **[Click]** This figure shows the impact of the interaction between land-use cluster and public transit boardings. 
 
 **[Click]** We found that multiple transfers required by the trips in the area of middle density/diversity land use intensify the competition.
 
 ## RQ2 Modal competition: selective recommendations | (Paper V) 
-(43, 1474)
+(48)
 
 **[Click]** Based on the main findings, I present some recommendations here. 
 
@@ -266,7 +270,7 @@ After the data enrichment, the ride-sourcing trips are ready for the analysis. N
 **[Click]** We could also incentivise the ride-sourcing trips that fill the gaps in the public transt services that take a long time or require lengthy walking or require transfers connecting to suburban areas.
 
 ## A summary of answers to RQ2 | Characterising transport modal disparities between public transit and car & ride-sourcing
-(62, 1606)
+(80)
 
 Putting human movements into transport systems, what do we find about the disparities between public transit and car and ride-sourcing?
 
@@ -279,7 +283,7 @@ Putting human movements into transport systems, what do we find about the dispar
 **[Click]** However, for making public transit more competitive, these spatiotemporal details add nuanced insights to identify gaps and opportunities for policymaking and transport planning.
 
 ## Knowledge contributions
-(,)
+(54)
 
 **[Click]** **[Click]** This thesis provides validation to identify the limitations of geotagged tweets: **behavior bias**, **biased population**, and **sparsity issue**. Especially we highlight the unreliability of using it for commuting demand.
 
@@ -290,7 +294,7 @@ Putting human movements into transport systems, what do we find about the dispar
 The knowledge is useful for transport planning and future mobility research of continuously using geotagged tweets.
 
 ## Methodological contributions
-(,)
+(40)
 
 **[Click]** **[Click]** This thesis proposes **a density approach** and **an individual-based mobility model** for travel demand estimation, addressing sparsity issue and behaviour bias of geotagged tweets.
 
@@ -299,7 +303,7 @@ The knowledge is useful for transport planning and future mobility research of c
 Future mobility research can apply the frameworks to different regions with different datasets.
 
 ## Outlook
-(90, 1696)
+(110)
 
 After four-year research, compared with much more knowledge still needed, this doctoral research is just a start. I believe the future work should ask relevant questions with powerful and innovative tools without constraining the research into specific data sources. There are four directions I'd like to pursue in the future.
 
@@ -316,6 +320,6 @@ One way of doing this is to combine multi-modal trip data to explore the issues 
 Along this direction, advanced techniques from graph learning and complex systems will contribute to urban mobility research together with the increasingly available data.
 
 ## Thanks for listening!
-(14, 1800)
+(22)
 
 Thanks for listening. That's all for the presentation part. You can reach me via email, Twitter, or my personal website. You can access the thesis using this link or using your phone to scan the QR code to visit it.

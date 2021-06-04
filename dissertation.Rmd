@@ -219,9 +219,9 @@ The reliability of estimated commuting trips using geotagged tweets is low.
 ## RQ1 Potentials at individual level: population heterogeneity on mobility | (Paper I) {.build}
 
 <div style="float: left; width: 50%;">
-<p><small>Four types of travellers</small></p>
+<center><p><small>Four types of travellers</small></p></center>
 
-<center>![](figs/four_travellers.png){width=100%}</center>
+<center>![](figs/four_travellers.png){width=90%}</center>
 </div>
 
 <div style="float: right; width: 50%;">
